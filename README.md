@@ -33,23 +33,43 @@ git clone https://github.com/vmcgargill/09ReadmeGenerator.git
 
 Or you can download the [GitHub Repository](https://github.com/vmcgargill/09ReadmeGenerator) directly from GitHub. 
 
+After your repository has be cloned/downloaded, CD into it's directory.
+
+![Step 1](./images/Screenshot_1.png)
+
 #### Step #2:
 
 Make sure you have node.js installed on your computer. If it is not installed then you may install it here:
 
 [Node.js website](https://nodejs.org/en)
 
+![Step 2](./images/Screenshot_2.png)
+
 #### Step #3: 
 
-Inside the GitHub repository you just cloned in [Step 1](####Step1:), run the index.js file using node by entering the following command: 
+Inside the GitHub repository you just cloned in [Step 1](####Step1:), install Inquirer.js using NPM by entering the following command:
+
+```
+npm install inquirer
+```
+
+Then run the index.js file using node by entering the following command: 
 
 ```
 node index.js
 ``` 
 
+![Step 3](./images/Screenshot_3.png)
+
 #### Step #4:
 
-Enter in the confirmations as prompted. Provide you project title, description, installation instructions, usage, select a license, enter your contribution guidelines, and explain how to test. After that your REAME.md file will be generated and will show up in a folder called "Generate". You're good to go! 
+Enter in the confirmations as prompted. Provide you project title, description, installation instructions, usage, select a license, enter your contribution guidelines, and explain how to test. 
+
+![Step 4](./images/Screenshot_4.png)
+
+After that your REAME.md file will be generated and will show up in a folder called "Generate". You're good to go! 
+
+![Results](./images/Screenshot_5.png)
  
 ## Usage 
 This application is intended to be used to create a README.me file easily via the command line.
@@ -62,7 +82,11 @@ If you would like to contribute, please reach out using the contact info in the 
  
 ## Tests 
 First install node.js on your computer if you have not already. Then clone the repository from GitHub. Finally, open the repository folder in the command line and run index.js. After you entered all the commands, check for the folder that says "Generate" for a README.md file to see your generated README. Refer to the [Installation](#Installation) section of this README for more detailed directions.
- 
+
+## Video Example
+
+[Click here to view YouTube video example](https://youtu.be/NHmEnpzxq6I)
+
 ## Questions 
 If you have any questions feel free to contact: 
 
