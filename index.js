@@ -207,7 +207,7 @@ function init() {
         "[Tests](#tests) \n- [License](#license) \n- [Questions](#questions) \n \n" + 
         "## Installation \n" + installation + // Installation
         "\n \n## Usage \n" + usage + // Usage
-        "\n \n## License \n" + license + // License Section
+        "\n \n## License \nThis application is covered by: " + license + // License Section
         "\n \n## Contribution \n" + contribution + // Contribution 
         "\n \n## Tests \n" + tests + // Tests
         "\n \n## Questions \nIf you have any questions feel free to contact: \n \n" + // Questions & Contact
