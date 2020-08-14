@@ -1,0 +1,26 @@
+{
+  "name": "09readmegenerator",
+  "version": "1.0.0",
+  "description": "Readme Generator Assignment",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vmcgargill/09ReadmeGenerator.git"
+  },
+  "keywords": [
+    "README",
+    "GENERATOR"
+  ],
+  "author": "Vincent J McGargill",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/vmcgargill/09ReadmeGenerator/issues"
+  },
+  "homepage": "https://github.com/vmcgargill/09ReadmeGenerator#readme",
+  "dependencies": {
+    "inquirer": "^7.3.3"
+  }
+}
