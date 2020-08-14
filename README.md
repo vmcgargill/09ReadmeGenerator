@@ -33,7 +33,11 @@ git clone https://github.com/vmcgargill/09ReadmeGenerator.git
 
 Or you can download the [GitHub Repository](https://github.com/vmcgargill/09ReadmeGenerator) directly from GitHub. 
 
-After your repository has be cloned/downloaded, CD into it's directory.
+After your repository has be cloned/downloaded, CD into it's directory:
+
+```
+cd 09ReadmeGenerator
+```
 
 ![Step 1](./images/Screenshot_1.png)
 
