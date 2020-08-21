@@ -84,8 +84,8 @@ const questions = [
 ];
 
 // function to write README file
-function writeToFile(fileName, data) {
-    fs.writeFile(fileName, data, function(err) {
+const writeToFile = (fileName, data) => {
+    fs.writeFile(fileName, data, (err) => {
 
         if (err) {
             return console.log(err);
@@ -96,10 +96,10 @@ function writeToFile(fileName, data) {
 }
 
 // function to initialize program
-function init() {
+const init = () => {
 
     
-    inquirer.prompt(questions).then(function(response) {
+    inquirer.prompt(questions).then((response) => {
         var title = response.title;
         var description = response.description;
         var installation = response.installation;
@@ -238,7 +238,7 @@ function init() {
                         'No'
                     ]
                 },
-            ]).then(function(response) {
+            ]).then((response) => {
                 var UserResponse = response.overwrite;
                 if (UserResponse == "Yes") {
                     writeToFile("Generate/README.md", README);
