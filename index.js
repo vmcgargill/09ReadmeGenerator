@@ -1,6 +1,7 @@
 var inquirer = require("inquirer");
 var fs = require("fs");
-// var licenseBadge = require('./license')
+const path = require("path");
+const OUTPUT_DIR = path.resolve(__dirname, "Generate");
 
 // array of questions for user
 const questions = [
@@ -200,18 +201,29 @@ function init() {
           }
         
         var README = badge + // License Badge
-        "\n \n# " + title + // Title
-        "\n \n ## Description \n" + description + // Description
+        "\n \n# " + 
+        title + // Title
+        "\n \n ## Description \n" + 
+        description + // Description
         "\n \n# Table of Contents \n- [Installation](#installation) \n- " + // Table Of Contens
         "[Usage](#usage) \n- [Contribution](#contribution) \n- " + 
         "[Tests](#tests) \n- [License](#license) \n- [Questions](#questions) \n \n" + 
-        "## Installation \n" + installation + // Installation
-        "\n \n## Usage \n" + usage + // Usage
-        "\n \n## License \nThis application is covered by: " + license + // License Section
-        "\n \n## Contribution \n" + contribution + // Contribution 
-        "\n \n## Tests \n" + tests + // Tests
-        "\n \n## Questions \nIf you have any questions feel free to contact: \n \n" + // Questions & Contact
+        "## Installation \n```\n" + 
+        installation + // Installation
+        "\n```\n \n## Usage \n ```\n" + 
+        usage + // Usage
+        "\n```\n \n## License \nThis application is covered by: " + 
+        license + // License Section
+        "\n \n## Contribution \n" + 
+        contribution + // Contribution 
+        "\n \n## Tests \n```\n" + 
+        tests + // Tests
+        "\n```\n \n## Questions \nIf you have any questions feel free to contact: \n \n" + // Questions & Contact
         "[GitHub](" + githubLink + ") \n \nEmail: [" + email + "](mailto:" + email + ")"; 
+
+        if (!fs.existsSync(OUTPUT_DIR)) {
+            fs.mkdirSync(OUTPUT_DIR)
+        }
 
         if (fs.existsSync("Generate/README.md")) {
             inquirer.prompt([
