@@ -17,7 +17,7 @@ const questions = [
     },
     {
         type: "input",
-        message: "What are the installation instruction for your project?",
+        message: "What command is used to install the project?",
         name: "installation"
     },
     {
@@ -32,7 +32,7 @@ const questions = [
     },
     {
         type: "input",
-        message: "How do you test this project?",
+        message: "What is the command to test the project?",
         name: "tests"
     },
     {
@@ -97,6 +97,8 @@ function writeToFile(fileName, data) {
 
 // function to initialize program
 function init() {
+
+    
     inquirer.prompt(questions).then(function(response) {
         var title = response.title;
         var description = response.description;
@@ -207,12 +209,12 @@ function init() {
         description + // Description
         "\n \n# Table of Contents \n- [Installation](#installation) \n- " + // Table Of Contens
         "[Usage](#usage) \n- [Contribution](#contribution) \n- " + 
-        "[Tests](#tests) \n- [License](#license) \n- [Questions](#questions) \n \n" + 
-        "## Installation \n```\n" + 
+        "[Tests](#tests) \n- [License](#license) \n- [Questions](#questions) \n\n" + 
+        "## Installation \nTo install, run the following command:\n```\n" + 
         installation + // Installation
-        "\n```\n \n## Usage \n ```\n" + 
+        "\n```\n\n## Usage\n" + 
         usage + // Usage
-        "\n```\n \n## License \nThis application is covered by: " + 
+        "\n\n## License \nThis application is covered by: " + 
         license + // License Section
         "\n \n## Contribution \n" + 
         contribution + // Contribution 
