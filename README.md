@@ -1,4 +1,4 @@
-[![License: Unlicense](https://img.shields.io/badge/license-Unlicense-blue.svg)](http://unlicense.org/)
+[![License: NPM package](https://img.shields.io/badge/License-NPM%20Inquirer%20Package-green.svg)](https://www.npmjs.com/package/inquirer)
 
 # README Generator
  

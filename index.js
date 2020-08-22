@@ -40,6 +40,8 @@ const questions = [
         message: "Please select a license:",
         name: "license",
         choices: [
+            'NPM Package',
+            'NPM Inquirer Package',
             'Apache 2.0 License', 
             'Boost Software License 1.0',
             'BSD 3-Clause License',
@@ -97,7 +99,6 @@ const writeToFile = (fileName, data) => {
 
 // function to initialize program
 const init = () => {
-
     
     inquirer.prompt(questions).then((response) => {
         var title = response.title;
@@ -113,6 +114,12 @@ const init = () => {
         var badge;
 
         switch(license) {
+            case 'NPM Package':
+                badge = '[![License: NPM](https://img.shields.io/badge/License-NPM%20Package-green.svg)](https://www.npmjs.com/)';
+                break;
+            case 'NPM Inquirer Package':
+                badge = '[![License: NPM Inquirer package](https://img.shields.io/badge/License-NPM%20Inquirer%20Package-green.svg)](https://www.npmjs.com/package/inquirer)'
+                break;
             case 'Apache 2.0 License':
                 badge = "[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)";
                 break;
@@ -200,7 +207,7 @@ const init = () => {
             case 'The zlib/libpng License':
                 badge = "[![License: Zlib](https://img.shields.io/badge/License-Zlib-lightgrey.svg)](https://opensource.org/licenses/Zlib)";
                 break;
-          }
+        }
         
         var README = badge + // License Badge
         "\n \n# " + 
