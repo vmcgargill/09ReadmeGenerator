@@ -79,7 +79,7 @@ After that your REAME.md file will be generated and will show up in a folder cal
 This application is intended to be used to create a README.me file easily via the command line.
 
 ## License
-This application is unlicensed, it is a class project and it is free to use for anyone. To see a full list of license badges used to create this application, [click here](https://gist.github.com/lukas-h/2a5d00690736b4c3a7ba).
+This application is covered by NPM Inquirer: [![License: NPM package](https://img.shields.io/badge/License-NPM%20Inquirer%20Package-green.svg)](https://www.npmjs.com/package/inquirer)
  
 ## Contribution 
 If you would like to contribute, please reach out using the contact info in the questions section.
