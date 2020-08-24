@@ -23,7 +23,7 @@ npm i
 You use it to generate readmes. Just clone the project and run npm i. Then you can run node index.js.
 
 ## License 
-This application is covered by NPM Inquirer: [![License: NPM package](https://img.shields.io/badge/License-NPM%20Inquirer%20Package-green.svg)](https://www.npmjs.com/package/inquirer)
+This application is covered by: NPM Inquirer Package
  
 ## Contribution 
 Contact me using info in questions.
